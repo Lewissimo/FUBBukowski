@@ -1,0 +1,25 @@
+.Contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90svh;
+    background-color: black;
+    .Content{
+        margin: 0 !important;
+        align-items: center;
+        width: clamp(300px, 100%, 1200px);
+        ul{
+            list-style: none;
+        }        
+
+        form{
+            *{
+                margin-top: 10px;
+            }
+        }
+
+    
+    }
+}

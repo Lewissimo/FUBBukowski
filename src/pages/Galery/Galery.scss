@@ -1,0 +1,91 @@
+.videoBox {
+  margin-top: 20px;
+  transition: 1s;
+
+  video {
+    border-radius: 20px;
+  }
+}
+
+#galery {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  min-height: 100svh;
+  align-items: center;
+  .galerySide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    color: rgba(240, 248, 255, 0.526);
+    .icon {
+      font-size: 5em;
+    }
+    &:hover {
+      cursor: pointer;
+      color: aliceblue;
+    }
+  }
+}
+.MediaContentViewer {
+  background-color: rgb(40, 20, 20);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  user-select: none;
+
+  > span {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .mediaDisp {
+    cursor: pointer;
+    max-width: 300px;
+  }
+
+  .swiperDisp {
+    max-width: 90svw;
+    max-height: 80svh;
+  }
+
+  .mediaBox {
+    position: relative;
+    &:hover {
+      img {
+        box-shadow: 0 0 0 5px black;
+      }
+
+      .playButton {
+        color: black;
+      }
+    }
+  }
+  .playButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+  }
+}
+
+.SwiperBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.Swiper {
+  max-height: 70svh;
+}
+.loadingImage{
+    margin: 0 auto;
+}

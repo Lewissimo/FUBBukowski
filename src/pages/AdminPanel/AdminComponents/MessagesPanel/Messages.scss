@@ -1,0 +1,44 @@
+.MessBody{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.MessSpaceFooter{
+    display: flex;
+    justify-content: space-around;
+}
+.MessSpaceBox{
+    background-color: black;
+}
+.Messages{
+    min-height: 600px !important;
+    background-color: yellow;
+}
+
+.messageIcons{
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.topBar{
+    position: relative;
+    .messageIcons{
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 0;
+    }
+}
+.listL{
+    position: relative;
+    .arrow{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

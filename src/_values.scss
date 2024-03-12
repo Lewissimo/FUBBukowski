@@ -1,0 +1,76 @@
+$color_1: black; //navs and boxes
+$color_2: black; //main background
+$color_3: black; //fonts
+$color_4: orange; //hover color
+
+@keyframes textShowAnim {
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes showFromDown {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes arrowShow {
+    from{
+        width: 200px;
+        height: 200px;
+    }
+    to{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes showBox {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.showBoxFromDown{
+    animation: .8s showFromDown forwards;
+}
+
+.showBoxAnim{
+    animation: .8s showBox forwards;
+}
+
+.showAnimClass{
+    animation: 1s textShowAnim forwards;
+}
+
+
+
+.titleDarkBG{
+    color: white;
+}
+.titleLightBG{
+    color: black;
+}
+.titleDarkBG, .titleLightBG{
+    font-size: 3em; 
+    font-weight: 700;
+}
+
+.clickableText{
+    cursor: pointer;
+    &:hover{
+        color: green;
+    }
+}

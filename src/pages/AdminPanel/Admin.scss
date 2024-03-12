@@ -1,0 +1,32 @@
+.AdminPanel{
+        .Statistic{
+            height: 25svh;
+            .chart{
+                height: 100%
+            }
+        }
+        .icon{
+            font-size: 4em;
+            
+        }
+
+        .EditFormBox{
+            height: clamp(300px, 50svh,600px);
+            margin: 5px;
+        }
+        .AppsPanel{
+            .iconBox{
+                height: clamp(130px, 20svh, 400px);
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &:hover{
+                    .icon{
+                        color: gray;
+                    }
+                }
+            }
+        }
+}

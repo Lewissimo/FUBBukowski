@@ -1,0 +1,32 @@
+@import '../values';
+
+.LogoBox{
+    display: flex;
+    align-items: end;
+    .descriptionLogoBox{
+        display: flex;
+        flex-direction: column;
+        font-size: .7em;  
+        text-align: start;  
+        .description{
+            font-style: oblique;
+        }
+    }
+}
+
+.MainNav{
+    padding: 20px;
+    // position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255) !important;
+    .contactNavBox{
+        flex: 5;
+        display: flex;
+        gap: 20px;
+        >*{
+            cursor: pointer;
+        }
+    }
+}
